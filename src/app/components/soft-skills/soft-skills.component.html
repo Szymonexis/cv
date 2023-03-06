@@ -1,0 +1,21 @@
+<mat-card class="card soft-skills">
+  <h1 class="title">
+    <mat-icon> person </mat-icon>
+    Soft Skills
+  </h1>
+
+  <ng-container *ngFor="let softSkill of softSkills; let index = index">
+    <h2>
+      {{ softSkill.name }}
+    </h2>
+
+    <div class="soft-skills__description">
+      {{ softSkill.description }}
+    </div>
+
+    <app-divider
+      *ngIf="index + 1 !== softSkills?.length"
+      [size]="1"
+    ></app-divider>
+  </ng-container>
+</mat-card>

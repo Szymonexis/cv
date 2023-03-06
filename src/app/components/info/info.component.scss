@@ -1,0 +1,37 @@
+@import "./../../../styles.scss";
+
+.info {
+  color: $blue-dark;
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+
+      mat-icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    color: black;
+  }
+}

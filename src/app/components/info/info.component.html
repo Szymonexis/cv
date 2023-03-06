@@ -1,0 +1,40 @@
+<mat-card class="card info">
+  <h1 class="title">
+    <mat-icon> info </mat-icon>
+    Info
+  </h1>
+
+  <div class="info__contacts">
+    <div class="info__contacts__item">
+      <mat-icon> phone </mat-icon> {{ description?.phone }}
+    </div>
+    <div class="info__contacts__item">
+      <mat-icon> mail </mat-icon>
+      <a [href]="'mailto:' + description?.email">
+        {{ description?.email }}
+      </a>
+    </div>
+    <div class="info__contacts__item">
+      <mat-icon> web </mat-icon>
+      <a [href]="description?.site">
+        My Site
+      </a>
+    </div>
+    <div class="info__contacts__item">
+      <mat-icon> co_present </mat-icon>
+      <a [href]="description?.linkedin">
+        LinkedIn
+      </a>
+    </div>
+    <div class="info__contacts__item">
+      <mat-icon> code </mat-icon>
+      <a [href]="description?.github">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="info__text">
+    {{ description?.text }}
+  </div>
+</mat-card>

@@ -1,0 +1,36 @@
+<mat-card class="schools card">
+  <h1 class="title">
+    <mat-icon> school </mat-icon>
+    Education
+  </h1>
+
+  <app-divider></app-divider>
+
+  <ng-container *ngFor="let school of schools; let index = index">
+    <h2>
+      {{ school.name }}
+      <a [href]="school.url"> @{{ school.school }} </a>
+    </h2>
+
+    <div class="schools__dates">
+      <div class="schools__dates__from">
+        From: {{ monthNames[school.from.getMonth()] }},
+        {{ school.from.getFullYear() }}
+      </div>
+      <div class="schools__dates__to">
+        <ng-container *ngIf="!school.isCurrent; else current">
+          To: {{ monthNames[school.to.getMonth()] }},
+          {{ school.to.getFullYear() }}
+        </ng-container>
+        <ng-template #current>
+          To:
+          <span class="schools__dates__current">Now</span>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="schools__description">{{ school.description }}</div>
+
+    <app-divider *ngIf="index + 1 !== schools?.length" [size]="1"></app-divider>
+  </ng-container>
+</mat-card>

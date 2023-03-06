@@ -1,0 +1,26 @@
+.page {
+  // outline: grey 1px solid;
+  width: 21cm;
+  height: 29.7cm;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+
+  &__grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: calc(100% / 3 * 1) calc(100% / 3 * 2);
+    min-height: 100%;
+    position: relative;
+
+    &__container {
+      max-width: calc(100% - 1rem);
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

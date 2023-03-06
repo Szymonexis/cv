@@ -1,0 +1,28 @@
+<div class="page">
+  <div class="page__grid">
+    <app-about-me [technologies]="data.technologies"></app-about-me>
+    <div class="page__grid__container">
+      <app-info [description]="data.description"></app-info>
+      <app-jobs [jobs]="data.jobs"></app-jobs>
+    </div>
+  </div>
+</div>
+<div class="page">
+  <div class="page__grid">
+    <app-about-me
+      [showHeader]="false"
+      [tools]="data.tools"
+      [languages]="data.languages"
+    ></app-about-me>
+    <div class="page__grid__container">
+      <app-schools [schools]="data.schools"></app-schools>
+      <app-soft-skills [softSkills]="data.softSkills"></app-soft-skills>
+      <div class="page__footer">
+        <app-footer
+          [declaration]="data.declaration"
+          [clause]="data.clause"
+        ></app-footer>
+      </div>
+    </div>
+  </div>
+</div>

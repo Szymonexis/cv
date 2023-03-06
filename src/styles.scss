@@ -1,0 +1,47 @@
+$blue-dark: #023e8a;
+$blue-light: #0077b6;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12mm;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $blue-dark;
+  }
+
+  a,
+  a:hover {
+    all: unset;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  @page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
