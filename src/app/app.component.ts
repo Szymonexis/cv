@@ -75,7 +75,7 @@ export class AppComponent {
         to: new Date(Date.now()),
         isCurrent: true,
         description:
-          '8 months of developement on a all-aspect position for Dr. HairCare app. Since june 2022 -work in WaveMaker (from Angular 7 to Angular 14)',
+          '8 months of developement on a all-aspect position for Dr. HairCare app. Since june 2022 - work for WaveMaker (from Angular 7 to Angular 14)',
         usedTechnologies: [
           'React-Native',
           'React (PWA)',
@@ -83,7 +83,7 @@ export class AppComponent {
           'NestJS',
           'PostgreSQL',
         ],
-        usedTools: ['Jenkins', 'Metro', 'Jira', 'GCP'],
+        usedTools: ['Jenkins', 'Metro', 'Jira', 'GCP', 'Azure'],
       },
       {
         name: 'Junior Backend Developer',
@@ -141,9 +141,9 @@ export class AppComponent {
           'I love taking on new challanges - the more complex the problem, the more I am happy when I solve it',
       },
       {
-        name: 'System Flexibility',
+        name: "Flexible",
         description:
-          'I can work on any OS, any system. On my machines I use Widnows, MacOS and Linux',
+          'I can work on any OS, any system, within any time-frame, day or night.',
       },
     ],
     declaration:
