@@ -36,7 +36,7 @@ export class AppComponent {
     languages: [
       { name: 'Polish - native', score: 100 },
       { name: 'English - B2E', score: 95 },
-      { name: 'Russian - A1', score: 20 },
+      { name: 'Russian - A1', score: 15 },
     ].sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     description: {
@@ -109,7 +109,7 @@ export class AppComponent {
         from: new Date(2019, 8),
         to: new Date(2022, 5),
         isCurrent: false,
-        description: 'Graduated with a grade of 4.9',
+        description: 'Graduated with a grade of 4.8',
       },
       {
         name: 'Masters Degree',

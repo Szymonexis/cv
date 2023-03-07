@@ -8,6 +8,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0.5rem 0;
 
     &__item {
       display: flex;
@@ -31,7 +32,6 @@
   }
 
   &__text {
-    margin-top: 1rem;
     color: black;
   }
 }
