@@ -8,20 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   data: Data = {
     technologies: [
-      { name: 'Angular', score: 100 },
-      { name: 'Typescipt', score: 100 },
-      { name: 'RxJS', score: 100 },
+      { name: 'Angular', score: 90 },
+      { name: 'Typescipt', score: 90 },
+      { name: 'RxJS', score: 90 },
       { name: 'NestJS', score: 80 },
-      { name: 'Expo', score: 70 },
       { name: 'React-Native', score: 75 },
       { name: 'React', score: 60 },
       { name: 'Java', score: 40 },
-      { name: 'D3', score: 50 },
+      { name: 'C', score: 40 },
+      { name: 'D3', score: 70 },
       { name: 'Bash', score: 50 },
       { name: 'Python', score: 40 },
       { name: 'PostgreSQL', score: 75 },
       { name: 'MongoDB', score: 75 },
-    ].sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
+    ]
+      .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+      .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     tools: [
       { name: 'Git', score: 100 },
@@ -31,13 +33,17 @@ export class AppComponent {
       { name: 'Jira', score: 75 },
       { name: 'GCP', score: 60 },
       { name: 'Jenkins', score: 40 },
-    ].sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
+    ]
+      .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+      .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     languages: [
       { name: 'Polish - native', score: 100 },
-      { name: 'English - B2E', score: 95 },
-      { name: 'Russian - A1', score: 15 },
-    ].sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
+      { name: 'English - B2E', score: 90 },
+      { name: 'Russian - A1', score: 10 },
+    ]
+      .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+      .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     description: {
       phone: '794 03 03 63',
@@ -47,11 +53,11 @@ export class AppComponent {
       linkedin:
         'https://www.linkedin.com/in/szymon-kaszuba-ga%C5%82ka-394599200/',
       text: `
-      Hi, My name is Szymon Kaszuba-Gałka, but you can call me Szymon or Simon :) 
-      I am a Software Developer and have always had something to do with computers. 
-      My father was a mechatronics engineer so I guess I caught the bug from him. 
-      My target is to become as good of a software developer as it is possible - I hope 
-      I can fulfill that dream with you!`,
+      <p>Hi !</p>
+      <p>My name is Szymon Kaszuba-Gałka (Simon in english). I am a Software Developer.</p>
+      <p>Programming is my passion and I am still trying to find myself in the programming world. 
+      That's why I tend to a lot of it in my free time and try not to stay only in one camp for too long - I work with C, Python and JavaScript but I also try out new things like Rust, Go or OCaml</p>
+      `,
     },
 
     jobs: [
@@ -75,7 +81,7 @@ export class AppComponent {
         to: new Date(Date.now()),
         isCurrent: true,
         description:
-          '8 months of developement on a all-aspect position for Dr. HairCare app. Since june 2022 - work for WaveMaker (from Angular 7 to Angular 14)',
+          '8 months of developement on a all-aspect position for Dr. HairCare app. Since june 2022 - work for WaveMaker (from Angular 7 to Angular 15)',
         usedTechnologies: [
           'React-Native',
           'React (PWA)',
@@ -97,9 +103,11 @@ export class AppComponent {
         usedTechnologies: ['Java', 'Python', 'SQL'],
         usedTools: ['Jenkins', 'Maven', 'Felix', 'Jira', 'Splunk'],
       },
-    ].sort(
-      ({ from: fromA }, { from: fromB }) => fromB.getTime() - fromA.getTime()
-    ),
+    ]
+      .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+      .sort(
+        ({ from: fromA }, { from: fromB }) => fromB.getTime() - fromA.getTime()
+      ),
 
     schools: [
       {
@@ -121,9 +129,11 @@ export class AppComponent {
         description:
           'Currently ongoing - learning mainly focuses on AI Networks, Network Administration and WebApps',
       },
-    ].sort(
-      ({ from: fromA }, { from: fromB }) => fromB.getTime() - fromA.getTime()
-    ),
+    ]
+      .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+      .sort(
+        ({ from: fromA }, { from: fromB }) => fromB.getTime() - fromA.getTime()
+      ),
     softSkills: [
       {
         name: 'Team Player & Lone Wolf',
@@ -141,11 +151,11 @@ export class AppComponent {
           'I love taking on new challanges - the more complex the problem, the more I am happy when I solve it',
       },
       {
-        name: "Flexible",
+        name: 'Flexible',
         description:
           'I can work on any OS, any system, within any time-frame, day or night.',
       },
-    ],
+    ].sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB)),
     declaration:
       'I hereby confirm that all the information mentioned in this resume is accurate and, I am responsible for their correctness. I sincerely verify the authenticity of all the information mentioned above. I sincerely declare that the facts provided in this resume are true and correct to the best of my knowledge',
     clause:

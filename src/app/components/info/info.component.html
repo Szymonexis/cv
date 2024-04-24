@@ -18,25 +18,17 @@
     </div>
     <div class="info__contacts__item">
       <mat-icon> web </mat-icon>
-      <a [href]="description?.site">
-        My Site
-      </a>
+      <a [href]="description?.site"> My Site </a>
     </div>
     <div class="info__contacts__item">
       <mat-icon> co_present </mat-icon>
-      <a [href]="description?.linkedin">
-        LinkedIn
-      </a>
+      <a [href]="description?.linkedin"> LinkedIn </a>
     </div>
     <div class="info__contacts__item">
       <mat-icon> code </mat-icon>
-      <a [href]="description?.github">
-        GitHub
-      </a>
+      <a [href]="description?.github"> GitHub </a>
     </div>
   </div>
 
-  <div class="info__text">
-    {{ description?.text }}
-  </div>
+  <div class="info__text" [innerHTML]="description?.text | safeHtml"></div>
 </mat-card>

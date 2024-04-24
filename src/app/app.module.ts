@@ -12,9 +12,25 @@ import { InfoComponent } from './components/info/info.component';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+
 @NgModule({
-  declarations: [AppComponent, AboutMeComponent, DividerComponent, SchoolsComponent, JobsComponent, InfoComponent, SoftSkillsComponent, FooterComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MaterialModule],
+  declarations: [
+    AppComponent,
+    AboutMeComponent,
+    DividerComponent,
+    SchoolsComponent,
+    JobsComponent,
+    InfoComponent,
+    SoftSkillsComponent,
+    FooterComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    SafeHtmlPipe,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
