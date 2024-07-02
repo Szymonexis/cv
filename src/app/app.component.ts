@@ -8,27 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
   data: Data = {
     technologies: [
-      { name: 'Angular', score: 90 },
-      { name: 'Typescipt', score: 90 },
-      { name: 'RxJS', score: 90 },
-      { name: 'NestJS', score: 80 },
-      { name: 'React-Native', score: 75 },
-      { name: 'React', score: 60 },
-      { name: 'Java', score: 40 },
-      { name: 'C', score: 40 },
-      { name: 'D3', score: 70 },
-      { name: 'Bash', score: 50 },
-      { name: 'Python', score: 40 },
-      { name: 'PostgreSQL', score: 75 },
-      { name: 'MongoDB', score: 75 },
+      { name: 'Angular', score: 100 },
+      { name: 'Typescript', score: 100 },
+      { name: 'RxJS', score: 100 },
+      { name: 'NestJS', score: 90 },
+      { name: 'React-Native', score: 85 },
+      { name: 'React', score: 70 },
+      { name: 'Java', score: 50 },
+      { name: 'C', score: 50 },
+      { name: 'D3', score: 80 },
+      { name: 'Bash', score: 60 },
+      { name: 'Python', score: 85 },
+      { name: 'PostgreSQL', score: 85 },
+      { name: 'MongoDB', score: 85 },
     ]
+
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
       .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     tools: [
       { name: 'Git', score: 100 },
       { name: 'VS Code', score: 100 },
-      { name: 'NeoVim', score: 50 },
       { name: 'Azure', score: 75 },
       { name: 'Jira', score: 75 },
       { name: 'GCP', score: 60 },
@@ -47,16 +47,14 @@ export class AppComponent {
 
     description: {
       phone: '794 03 03 63',
-      email: 'szymonkaszuba3@wp.pl',
-      site: 'https://szymon-kaszuba.netlify.app/',
+      email: 'szymonkaszubagalka.innovio@gmail.com',
       github: 'https://github.com/Szymonexis',
       linkedin:
         'https://www.linkedin.com/in/szymon-kaszuba-ga%C5%82ka-394599200/',
       text: `
-      <p>Hi !</p>
-      <p>My name is Szymon Kaszuba-Gałka (Simon in english). I am a Software Developer.</p>
       <p>Programming is my passion and I am still trying to find myself in the programming world. 
-      That's why I tend to a lot of it in my free time and try not to stay only in one camp for too long - I work with C, Python and JavaScript but I also try out new things like Rust, Go or OCaml</p>
+      That's why I tend to a lot of it in my free time and try not to stay only in one camp for too long
+      - I work with C, Python and JavaScript but I also try out new things like Rust, Go or OCaml</p>
       `,
     },
 
@@ -81,13 +79,17 @@ export class AppComponent {
         to: new Date(Date.now()),
         isCurrent: true,
         description:
-          '8 months of developement on a all-aspect position for Dr. HairCare app. Since june 2022 - work for WaveMaker (from Angular 7 to Angular 15)',
+          '8 months of developement as a Full Stack developer for Dr. HairCare app. Since june 2022 - work for WaveMaker (now WPP plc.).',
         usedTechnologies: [
           'React-Native',
           'React (PWA)',
-          'Angular',
+          'Angular (7 to 15)',
           'NestJS',
           'PostgreSQL',
+          'D3',
+          'RxJS',
+          'ChartJS',
+          'WebSockets',
         ],
         usedTools: ['Jenkins', 'Metro', 'Jira', 'GCP', 'Azure'],
       },
@@ -208,7 +210,7 @@ export interface Language {
 export interface Description {
   phone: string;
   email: string;
-  site: string;
+  site?: string;
   github: string;
   linkedin: string;
   text: string;

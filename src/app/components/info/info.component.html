@@ -10,13 +10,7 @@
     <div class="info__contacts__item">
       <mat-icon> phone </mat-icon> {{ description?.phone }}
     </div>
-    <div class="info__contacts__item">
-      <mat-icon> mail </mat-icon>
-      <a [href]="'mailto:' + description?.email">
-        {{ description?.email }}
-      </a>
-    </div>
-    <div class="info__contacts__item">
+    <div *ngIf="description?.site" class="info__contacts__item">
       <mat-icon> web </mat-icon>
       <a [href]="description?.site"> My Site </a>
     </div>
@@ -27,6 +21,12 @@
     <div class="info__contacts__item">
       <mat-icon> code </mat-icon>
       <a [href]="description?.github"> GitHub </a>
+    </div>
+    <div class="info__contacts__item">
+      <mat-icon> mail </mat-icon>
+      <a [href]="'mailto:' + description?.email">
+        {{ description?.email }}
+      </a>
     </div>
   </div>
 
