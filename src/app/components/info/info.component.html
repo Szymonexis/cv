@@ -8,7 +8,7 @@
 
   <div class="info__contacts">
     <div class="info__contacts__item">
-      <mat-icon> phone </mat-icon> {{ description?.phone }}
+      <mat-icon> phone </mat-icon> {{ description?.phone ?? "" | translate }}
     </div>
     <div *ngIf="description?.site" class="info__contacts__item">
       <mat-icon> web </mat-icon>
@@ -30,5 +30,7 @@
     </div>
   </div>
 
-  <div class="info__text" [innerHTML]="description?.text | safeHtml"></div>
+  <div class="info__text">
+    {{ description?.text ?? "" | translate }}
+  </div>
 </mat-card>

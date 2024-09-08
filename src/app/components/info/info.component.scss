@@ -2,6 +2,7 @@
 
 .info {
   color: $blue-dark;
+  padding-bottom: 0;
 
   &__contacts {
     display: flex;
@@ -33,5 +34,9 @@
 
   &__text {
     color: black;
+
+    * {
+      margin: 0;
+    }
   }
 }

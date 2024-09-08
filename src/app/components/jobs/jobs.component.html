@@ -1,35 +1,41 @@
 <mat-card class="jobs card">
   <h1 class="title">
     <mat-icon> work </mat-icon>
-    Employment
+    {{ "jobs.title" | translate }}
   </h1>
 
   <app-divider></app-divider>
 
   <ng-container *ngFor="let job of jobs; let index = index">
     <h2>
-      {{ job.name }}
-      <a [href]="job.url"> @{{ job.workplace }} </a>
+      {{ job?.name ?? "" | translate }}
+      <a [href]="job.url"> &#64;{{ job?.workplace ?? "" | translate }} </a>
     </h2>
 
     <div class="jobs__dates">
       <div class="jobs__dates__from">
-        From: {{ monthNames[job.from.getMonth()] }},
+        {{ "dates.from" | translate }}:
+        {{ monthNames[job.from.getMonth()] | translate }},
         {{ job.from.getFullYear() }}
       </div>
       <div class="jobs__dates__to">
         <ng-container *ngIf="!job.isCurrent; else current">
-          To: {{ monthNames[job.to.getMonth()] }},
+          {{ "dates.to" | translate }}:
+          {{ monthNames[job.to.getMonth()] | translate }},
           {{ job.to.getFullYear() }}
         </ng-container>
         <ng-template #current>
-          To:
-          <span class="jobs__dates__current">Now</span>
+          {{ "dates.to" | translate }}:
+          <span class="jobs__dates__current">
+            {{ "dates.now" | translate }}
+          </span>
         </ng-template>
       </div>
     </div>
 
-    <div class="jobs__description">{{ job.description }}</div>
+    <div class="jobs__description">
+      {{ job?.description ?? "" | translate }}
+    </div>
 
     <div
       *ngIf="!!job.usedTechnologies.length"
@@ -37,14 +43,14 @@
     >
       <h3 class="title">
         <mat-icon> code </mat-icon>
-        Used technologies
+        {{ "jobs.technologies" | translate }}
       </h3>
       <div class="jobs__technologies">
         <span
           *ngFor="let technology of job.usedTechnologies"
           class="jobs__technologies__item"
         >
-          {{ technology }}
+          {{ technology ?? "" | translate }}
         </span>
       </div>
     </div>
@@ -52,11 +58,11 @@
     <div class="jobs__tools__container">
       <h3 class="title">
         <mat-icon> settings </mat-icon>
-        Used tools
+        {{ "jobs.tools" | translate }}
       </h3>
       <div class="jobs__tools">
         <span *ngFor="let tool of job.usedTools" class="jobs__tools__item">
-          {{ tool }}
+          {{ tool ?? "" | translate }}
         </span>
       </div>
     </div>

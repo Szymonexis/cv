@@ -1,10 +1,6 @@
 <mat-card class="card about-me">
   <ng-container *ngIf="showHeader">
-    <img
-      src="./../../../assets/my-photo.jpeg"
-      alt="My photo :3"
-      class="about-me__image"
-    />
+    <img src="./../../../assets/my-photo.jpeg" class="about-me__image" />
 
     <h1>Szymon <br />Kaszuba-Gałka</h1>
 
@@ -13,12 +9,12 @@
 
   <h2 *ngIf="technologies" class="title">
     <mat-icon> code </mat-icon>
-    Technologies
+    {{ "aboutMe.technologies" | translate }}
   </h2>
 
   <ng-container *ngFor="let technology of technologies; let index = index">
     <div class="about-me__technology">
-      <h3>{{ index + 1 }}. {{ technology?.name }}</h3>
+      <h3>{{ index + 1 }}. {{ technology?.name ?? "" | translate }}</h3>
       <mat-progress-bar
         mode="determinate"
         [value]="technology?.score"
@@ -28,12 +24,12 @@
 
   <h2 *ngIf="tools" class="title">
     <mat-icon> settings </mat-icon>
-    Tools
+    {{ "aboutMe.tools" | translate }}
   </h2>
 
   <ng-container *ngFor="let tool of tools; let index = index">
     <div class="about-me__technology">
-      <h3>{{ index + 1 }}. {{ tool?.name }}</h3>
+      <h3>{{ index + 1 }}. {{ tool?.name ?? "" | translate }}</h3>
       <mat-progress-bar
         mode="determinate"
         [value]="tool?.score"
@@ -43,12 +39,12 @@
 
   <h2 *ngIf="languages" class="title">
     <mat-icon> language </mat-icon>
-    Languages
+    {{ "aboutMe.languages" | translate }}
   </h2>
 
   <ng-container *ngFor="let language of languages; let index = index">
     <div class="about-me__technology">
-      <h3>{{ index + 1 }}. {{ language?.name }}</h3>
+      <h3>{{ index + 1 }}. {{ language?.name ?? "" | translate }}</h3>
       <mat-progress-bar
         mode="determinate"
         [value]="language?.score"

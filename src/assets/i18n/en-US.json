@@ -1,0 +1,92 @@
+{
+  "languages": {
+    "polish": "Polish - native",
+    "english": "English - B2E",
+    "russian": "Russian - A1"
+  },
+  "dates": {
+    "from": "From",
+    "to": "To",
+    "now": "Now"
+  },
+  "aboutMe": {
+    "tools": "Tools",
+    "technologies": "Technologies",
+    "languages": "Languages",
+    "description": "Programming is my true passion, and I constantly strive to deepen my expertise across a wide range of technologies. While I have solid experience in C, Python, and JavaScript, I actively seek out new challenges, exploring languages like Rust and Go to broaden my perspective. I believe in staying adaptable and pushing beyond the comfort zone of any single stack, always aiming to grow as a more versatile and effective engineer."
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "jobs": {
+    "title": "Employment History",
+    "technologies": "Used technologies",
+    "tools": "Used tools",
+    "items": [
+      {
+        "name": "Senior Service Desk Agent",
+        "description": "Worked as a first line support Service Desk Agent for UK, India and Baltic Sea based users."
+      },
+      {
+        "name": "Software Developer",
+        "description": "8 months of developement as a Full Stack developer for Dr. HairCare app. Since june 2022 - work for WaveMaker (now WPP plc.) on WPP-OS product, a Signle-SPA application with dynamically loaded microfrontends."
+      },
+      {
+        "name": "Junior Backend Developer",
+        "description": "Worked in a team that specialized in administration and developement of the main banking forms system for mBank."
+      }
+    ]
+  },
+  "school": {
+    "title": "Education",
+    "items": [
+      {
+        "name": "Bachelors Degree",
+        "school": "University of Łódź",
+        "description": "Graduated with a grade of 4.8"
+      },
+      {
+        "name": "Masters Degree",
+        "school": "University of Łódź",
+        "description": "Currently ongoing - curriculum mainly focuses on AI Networks, Network Administration and WebApps"
+      }
+    ]
+  },
+  "softSkills": {
+    "title": "Soft Skills",
+    "items": [
+      {
+        "name": "Versatile Team Player & Independent Worker",
+        "description": "I excel in collaborative environments and can seamlessly transition to working independently, delivering results in both team-based and solo projects."
+      },
+      {
+        "name": "Effective Communicator",
+        "description": "I confidently present new features to stakeholders and can clearly articulate complex problems, issues, and ideas with precision, accuracy, and efficiency."
+      },
+      {
+        "name": "Eager to Embrace Challenges",
+        "description": "I thrive on solving complex problems, and the more challenging the task, the more rewarding it is to find a solution."
+      },
+      {
+        "name": "Highly Adaptable",
+        "description": "I am comfortable working with any operating system, platform, or time frame, whether it's day or night."
+      }
+    ]
+  },
+  "declaration": "I hereby confirm that all the information mentioned in this resume is accurate and, I am responsible for their correctness. I sincerely verify the authenticity of all the information mentioned above. I sincerely declare that the facts provided in this resume are true and correct to the best of my knowledge",
+  "clause": "I hereby consent to my personal data being processed for the purpose of considering my application.",
+  "monthNames": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+}

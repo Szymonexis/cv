@@ -1,8 +1,8 @@
 <mat-card class="card footer">
   <div class="footer__item">
-    {{ declaration }}
+    {{ declaration ?? "" | translate }}
   </div>
   <div class="footer__item">
-    {{ clause }}
+    {{ clause ?? "" | translate }}
   </div>
 </mat-card>

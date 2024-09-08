@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  constructor(private translateService: TranslateService) {
+    const languages = {
+      'en-US': 'en-US',
+      'pl-PL': 'pl-PL',
+    } as const;
+
+    const language = languages['pl-PL'];
+
+    this.translateService.setDefaultLang(language);
+    this.translateService.use(language);
+  }
+
   data: Data = {
     technologies: [
       { name: 'Angular', score: 100 },
@@ -38,9 +51,9 @@ export class AppComponent {
       .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     languages: [
-      { name: 'Polish - native', score: 100 },
-      { name: 'English - B2E', score: 90 },
-      { name: 'Russian - A1', score: 10 },
+      { name: 'languages.polish', score: 100 },
+      { name: 'languages.english', score: 90 },
+      { name: 'languages.russian', score: 10 },
     ]
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
       .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
@@ -51,39 +64,33 @@ export class AppComponent {
       github: 'https://github.com/Szymonexis',
       linkedin:
         'https://www.linkedin.com/in/szymon-kaszuba-ga%C5%82ka-394599200/',
-      text: `
-      <p>Programming is my passion and I am still trying to find myself in the programming world. 
-      That's why I tend to a lot of it in my free time and try not to stay only in one camp for too long
-      - I work with C, Python and JavaScript but I also try out new things like Rust, Go or OCaml</p>
-      `,
+      text: 'aboutMe.description',
     },
 
     jobs: [
       {
-        name: 'Senior Service Desk Agent',
+        name: 'jobs.items.0.name',
         workplace: 'Fujitsu',
         url: 'https://www.linkedin.com/company/fujitsu/',
         from: new Date(2017, 5),
         to: new Date(2021, 3),
         isCurrent: false,
-        description:
-          'Worked as a first line support Service Desk Agent for UK, India and Baltic Sea based users.',
+        description: 'jobs.items.0.description',
         usedTechnologies: [],
         usedTools: ['ServiceNow', 'Oracle', 'DBMS', 'ActiveDirectory'],
       },
       {
-        name: 'Software Developer',
+        name: 'jobs.items.1.name',
         workplace: 'Digimonkeys.com',
         url: 'https://www.linkedin.com/company/digimonkeys-com/',
         from: new Date(2022, 2),
         to: new Date(Date.now()),
         isCurrent: true,
-        description:
-          '8 months of developement as a Full Stack developer for Dr. HairCare app. Since june 2022 - work for WaveMaker (now WPP plc.).',
+        description: 'jobs.items.1.description',
         usedTechnologies: [
           'React-Native',
           'React (PWA)',
-          'Angular (7 to 15)',
+          'Angular (7 - 18)',
           'NestJS',
           'PostgreSQL',
           'D3',
@@ -94,14 +101,13 @@ export class AppComponent {
         usedTools: ['Jenkins', 'Metro', 'Jira', 'GCP', 'Azure'],
       },
       {
-        name: 'Junior Backend Developer',
+        name: 'jobs.items.2.name',
         workplace: 'mBank S.A.',
         url: 'https://www.linkedin.com/company/mbank-s-a/',
         from: new Date(2021, 7),
         to: new Date(2022, 1),
         isCurrent: false,
-        description:
-          'Worked in a team that specialized in administration and developement of the main banking forms system for mBank.',
+        description: 'jobs.items.2.description',
         usedTechnologies: ['Java', 'Python', 'SQL'],
         usedTools: ['Jenkins', 'Maven', 'Felix', 'Jira', 'Splunk'],
       },
@@ -113,23 +119,26 @@ export class AppComponent {
 
     schools: [
       {
-        name: 'Bachelors Degree',
-        school: 'University of Łódź',
+        name: 'school.items.0.name',
+        school: 'school.items.0.school',
+        description: this.translateService.instant(
+          'school.items.0.description'
+        ),
         url: 'https://www.linkedin.com/school/unilodz/',
         from: new Date(2019, 8),
         to: new Date(2022, 5),
         isCurrent: false,
-        description: 'Graduated with a grade of 4.8',
       },
       {
-        name: 'Masters Degree',
-        school: 'University of Łódź',
+        name: 'school.items.1.name',
+        school: 'school.items.1.school',
+        description: this.translateService.instant(
+          'school.items.1.description'
+        ),
         url: 'https://www.linkedin.com/school/unilodz/',
         from: new Date(2022, 8),
         to: new Date(2024, 5),
         isCurrent: true,
-        description:
-          'Currently ongoing - learning mainly focuses on AI Networks, Network Administration and WebApps',
       },
     ]
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
@@ -138,47 +147,38 @@ export class AppComponent {
       ),
     softSkills: [
       {
-        name: 'Team Player & Lone Wolf',
-        description:
-          'I am a really good team player but I can also carry out solo tasks',
+        name: 'softSkills.items.0.name',
+        description: this.translateService.instant(
+          'softSkills.items.0.description'
+        ),
       },
       {
-        name: 'Good Communicator',
-        description:
-          "I don't hasitate when presenting new features to stakeholders and I am able to present problems/issues/ideas, even complex ones, with high efficency, accuracy and preciseness",
+        name: 'softSkills.items.1.name',
+        description: this.translateService.instant(
+          'softSkills.items.1.description'
+        ),
       },
       {
-        name: 'Open For New Challanges',
-        description:
-          'I love taking on new challanges - the more complex the problem, the more I am happy when I solve it',
+        name: 'softSkills.items.2.name',
+        description: this.translateService.instant(
+          'softSkills.items.2.description'
+        ),
       },
       {
-        name: 'Flexible',
-        description:
-          'I can work on any OS, any system, within any time-frame, day or night.',
+        name: 'softSkills.items.3.name',
+        description: this.translateService.instant(
+          'softSkills.items.3.description'
+        ),
       },
     ].sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB)),
-    declaration:
-      'I hereby confirm that all the information mentioned in this resume is accurate and, I am responsible for their correctness. I sincerely verify the authenticity of all the information mentioned above. I sincerely declare that the facts provided in this resume are true and correct to the best of my knowledge',
-    clause:
-      'I hereby consent to my personal data being processed for the purpose of considering my application.',
+    declaration: 'declaration',
+    clause: 'clause',
   };
 }
 
-export const monthNames = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
+export const monthNames = new Array(12)
+  .fill(0)
+  .map((_, i) => `monthNames.${i}`);
 
 export interface Data {
   technologies: Technology[];

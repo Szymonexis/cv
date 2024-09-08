@@ -1,35 +1,41 @@
 <mat-card class="schools card">
   <h1 class="title">
     <mat-icon> school </mat-icon>
-    Education
+    {{ "school.title" | translate }}
   </h1>
 
   <app-divider></app-divider>
 
   <ng-container *ngFor="let school of schools; let index = index">
     <h2>
-      {{ school.name }}
-      <a [href]="school.url"> @{{ school.school }} </a>
+      {{ school?.name ?? "" | translate }}
+      <a [href]="school.url"> &#64;{{ school?.school ?? "" | translate }} </a>
     </h2>
 
     <div class="schools__dates">
       <div class="schools__dates__from">
-        From: {{ monthNames[school.from.getMonth()] }},
+        {{ "dates.from" | translate }}:
+        {{ monthNames[school.from.getMonth()] | translate }},
         {{ school.from.getFullYear() }}
       </div>
       <div class="schools__dates__to">
         <ng-container *ngIf="!school.isCurrent; else current">
-          To: {{ monthNames[school.to.getMonth()] }},
+          {{ "dates.to" | translate }}:
+          {{ monthNames[school.to.getMonth()] | translate }},
           {{ school.to.getFullYear() }}
         </ng-container>
         <ng-template #current>
-          To:
-          <span class="schools__dates__current">Now</span>
+          {{ "dates.to" | translate }}:
+          <span class="schools__dates__current">
+            {{ "dates.now" | translate }}
+          </span>
         </ng-template>
       </div>
     </div>
 
-    <div class="schools__description">{{ school.description }}</div>
+    <div class="schools__description">
+      {{ school?.description ?? "" | translate }}
+    </div>
 
     <app-divider *ngIf="index + 1 !== schools?.length" [size]="1"></app-divider>
   </ng-container>

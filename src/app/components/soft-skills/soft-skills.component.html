@@ -1,18 +1,18 @@
 <mat-card class="card soft-skills">
   <h1 class="title">
     <mat-icon> person </mat-icon>
-    Soft Skills
+    {{ "softSkills.title" | translate }}
   </h1>
 
   <app-divider></app-divider>
 
   <ng-container *ngFor="let softSkill of softSkills; let index = index">
     <h2>
-      {{ softSkill.name }}
+      {{ softSkill?.name ?? "" | translate }}
     </h2>
 
     <div class="soft-skills__description">
-      {{ softSkill.description }}
+      {{ softSkill?.description ?? "" | translate }}
     </div>
 
     <app-divider

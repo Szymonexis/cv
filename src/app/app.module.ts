@@ -13,6 +13,13 @@ import { SoftSkillsComponent } from './components/soft-skills/soft-skills.compon
 import { FooterComponent } from './components/footer/footer.component';
 
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
+import { HttpLoaderFactory } from './shared/translation-loader.factory';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,12 +33,20 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     FooterComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     SafeHtmlPipe,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,92 @@
+{
+  "languages": {
+    "polish": "Polski - ojczysty",
+    "english": "Angielski - B2E",
+    "russian": "Rosyjski - A1"
+  },
+  "dates": {
+    "from": "Od",
+    "to": "Do",
+    "now": "Teraz"
+  },
+  "aboutMe": {
+    "tools": "Narzędzia",
+    "technologies": "Technologie",
+    "languages": "Języki",
+    "description": "Programowanie to moja pasja i nieustannie dążę do pogłębiania swojej wiedzy w szerokim zakresie technologii. Mam solidne podstawy w C, Pythonie i JavaScripcie, ale aktywnie szukam nowych wyzwań, eksplorując języki takie jak Rust i Go. Wierzę że elastyczność i wychodzenie poza strefę komfortu to klucz do sukcesu w dzisiejszym świecie IT oraz bycia lepszym inżynierem."
+  },
+  "technologies": {
+    "title": "Technologie"
+  },
+  "jobs": {
+    "title": "Historia Zatrudnienia",
+    "technologies": "Używane technologie",
+    "tools": "Używane narzędzia",
+    "items": [
+      {
+        "name": "Starszy Agent Service Desk",
+        "description": "Pracowałem jako agent pierwszej linii wsparcia Service Desk dla użytkowników z Wielkiej Brytanii, Indii i regionu Morza Bałtyckiego."
+      },
+      {
+        "name": "Programista",
+        "description": "8 miesięcy pracy jako Full Stack Developer nad aplikacją Dr. HairCare. Od czerwca 2022 r. - praca dla WaveMaker (obecnie WPP plc.) nad produktem WPP-OS, aplikacja Single-SPA z dynamicznie ladowanymi mikrofrontendami."
+      },
+      {
+        "name": "Młodszy Programista Backend",
+        "description": "Pracowałem w zespole specjalizującym się w administracji i rozwoju głównego systemu formularzy bankowych dla mBanku."
+      }
+    ]
+  },
+  "school": {
+    "title": "Wykształcenie",
+    "items": [
+      {
+        "name": "Tytuł Licencjata",
+        "school": "Uniwersytet Łódzki",
+        "description": "Ukończone z oceną 4,8"
+      },
+      {
+        "name": "Tytuł Magistra",
+        "school": "Uniwersytet Łódzki",
+        "description": "Obecnie w trakcie - program skupia się głównie na sieciach AI, administracji sieciowej i aplikacjach internetowych"
+      }
+    ]
+  },
+  "softSkills": {
+    "title": "Umiejętności Miękkie",
+    "items": [
+      {
+        "name": "Wszechstronny Gracz Zespołowy i Samodzielny Pracownik",
+        "description": "Świetnie radzę sobie w zespołach, a także potrafię płynnie przejść do pracy samodzielnej, dostarczając wyniki zarówno w projektach zespołowych, jak i solo."
+      },
+      {
+        "name": "Efektywny Komunikator",
+        "description": "Z pewnością prezentuję nowe funkcje interesariuszom i potrafię jasno przedstawić złożone problemy, zagadnienia i pomysły z precyzją, dokładnością i efektywnością."
+      },
+      {
+        "name": "Gotowość do Podejmowania Wyzwań",
+        "description": "Czerpię satysfakcję z rozwiązywania skomplikowanych problemów, a im trudniejsze zadanie, tym bardziej satysfakcjonujące jest znalezienie rozwiązania."
+      },
+      {
+        "name": "Wysoka Elastyczność",
+        "description": "Czuje się komfortowo pracując w dowolnym systemie operacyjnym, platformie, czy w dowolnych ramach czasowych - niezależnie od tego, czy to dzień, czy noc."
+      }
+    ]
+  },
+  "declaration": "Niniejszym potwierdzam, że wszystkie informacje zawarte w tym CV są dokładne i ponoszę za nie odpowiedzialność. Rzetelnie weryfikuję autentyczność wszystkich wymienionych powyżej informacji. Niniejszym oświadczam, że fakty podane w tym CV są prawdziwe i zgodne z moją najlepszą wiedzą.",
+  "clause": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rozpatrzenia mojej aplikacji.",
+  "monthNames": [
+    "Styczeń",
+    "Luty",
+    "Marzec",
+    "Kwiecień",
+    "Maj",
+    "Czerwiec",
+    "Lipiec",
+    "Sierpień",
+    "Wrzesień",
+    "Październik",
+    "Listopad",
+    "Grudzień"
+  ]
+}
