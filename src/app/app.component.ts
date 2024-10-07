@@ -14,6 +14,7 @@ export class AppComponent {
     } as const;
 
     const language = languages['pl-PL'];
+    // const language = languages['en-US'];
 
     this.translateService.setDefaultLang(language);
     this.translateService.use(language);
@@ -44,7 +45,7 @@ export class AppComponent {
       { name: 'VS Code', score: 100 },
       { name: 'Azure', score: 75 },
       { name: 'Jira', score: 75 },
-      { name: 'GCP', score: 60 },
+      { name: 'GCP', score: 80 },
       { name: 'Jenkins', score: 40 },
     ]
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
@@ -53,13 +54,12 @@ export class AppComponent {
     languages: [
       { name: 'languages.polish', score: 100 },
       { name: 'languages.english', score: 90 },
-      { name: 'languages.russian', score: 10 },
     ]
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
       .sort(({ score: scoreA }, { score: scoreB }) => scoreB - scoreA),
 
     description: {
-      phone: '794 03 03 63',
+      phone: '+48 794 03 03 63',
       email: 'szymonkaszubagalka.innovio@gmail.com',
       github: 'https://github.com/Szymonexis',
       linkedin:
@@ -110,6 +110,25 @@ export class AppComponent {
         description: 'jobs.items.2.description',
         usedTechnologies: ['Java', 'Python', 'SQL'],
         usedTools: ['Jenkins', 'Maven', 'Felix', 'Jira', 'Splunk'],
+      },
+      {
+        name: 'jobs.items.3.name',
+        workplace: 'WPP plc.',
+        url: 'https://www.linkedin.com/company/wpp/',
+        from: new Date(2022, 5),
+        to: new Date(Date.now()),
+        isCurrent: true,
+        description: 'jobs.items.3.description',
+        usedTechnologies: [
+          'Angular (7 - 18)',
+          'Webpack',
+          'D3',
+          'RxJS',
+          'Signals',
+          'WebSockets',
+          'Module Federation',
+        ],
+        usedTools: ['GCP', 'Kubernetes', 'GitLab', 'Azure'],
       },
     ]
       .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))

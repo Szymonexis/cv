@@ -29,11 +29,15 @@
       },
       {
         "name": "Software Developer",
-        "description": "8 months of developement as a Full Stack developer for Dr. HairCare app. Since june 2022 - work for WaveMaker (now WPP plc.) on WPP-OS product, a Signle-SPA application with dynamically loaded microfrontends."
+        "description": "8 months of developement as a Full Stack developer for Dr. HairCare app. Since june 2022 - work for WaveMaker (now WPP plc.) on WMOS, and now, WPP-OS product, a Signle-SPA application with dynamically loaded microfrontends."
       },
       {
         "name": "Junior Backend Developer",
         "description": "Worked in a team that specialized in administration and developement of the main banking forms system for mBank."
+      },
+      {
+        "name": "Frontend Developer",
+        "description": "I am currently working on a microservice-based, AI-powered, web operating system for WPP customers which allows them to perform high detail analysis of the ad market, ad campaigns, etc."
       }
     ]
   },

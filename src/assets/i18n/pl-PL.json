@@ -29,11 +29,15 @@
       },
       {
         "name": "Programista",
-        "description": "8 miesięcy pracy jako Full Stack Developer nad aplikacją Dr. HairCare. Od czerwca 2022 r. - praca dla WaveMaker (obecnie WPP plc.) nad produktem WPP-OS, aplikacja Single-SPA z dynamicznie ladowanymi mikrofrontendami."
+        "description": "8 miesięcy pracy jako Full Stack Developer nad aplikacją Dr. HairCare. Od czerwca 2022 r. - praca dla WaveMaker (obecnie WPP plc.) nad produktem WMOS, a później nad WPP-OS, aplikacja Single-SPA z dynamicznie ladowanymi mikrofrontendami."
       },
       {
         "name": "Młodszy Programista Backend",
         "description": "Pracowałem w zespole specjalizującym się w administracji i rozwoju głównego systemu formularzy bankowych dla mBanku."
+      },
+      {
+        "name": "Frontend Developer",
+        "description": "Obecnie pracuję nad systemem operacyjnym opartym na mikroserwisach, zasilanym sztuczną inteligencją, przeznaczonym dla klientów WPP, który umożliwia przeprowadzanie szczegółowej analizy rynku reklamowego, kampanii reklamowych itp."
       }
     ]
   },

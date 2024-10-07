@@ -1,10 +1,10 @@
 .page {
-  // outline: grey 1px solid;
   width: 21cm;
   height: 29.7cm;
   box-sizing: border-box;
   padding: 1rem;
   overflow: hidden;
+  position: relative;
 
   &__grid {
     box-sizing: border-box;
@@ -12,7 +12,6 @@
     gap: 1rem;
     grid-template-columns: calc(100% / 3 * 1) calc(100% / 3 * 2);
     min-height: 100%;
-    position: relative;
 
     &__container {
       max-width: calc(100% - 1rem);
