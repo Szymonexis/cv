@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv}% Default font size, values from 8-12pt are recommended
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.55\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Szymon}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kaszuba-Gałka}}}}} % Last name
+	
+	
+	\vspace{5pt}
+
+	
+	{\huge} % Career or current job title
+	
+\end{minipage}
+\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Łódź, Polska}\\
+	\icon{Phone}{12}{+48 794 03 03 63}\\
+	\icon{At}{12}{\href{mailto:szymonkaszubagalka.innovio@gmail.com}{szymonkaszubagalka.innovio@gmail.com}}\\	
+	\icon{Github}{12}{\href{https://github.com/Szymonexis}{Szymonexis}}\\
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/szymon-kaszuba-gałka/}{Szymon Kaszuba-Gałka}}\\
+\end{minipage}
+
+
+\vspace{0.3cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+
+\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip}
+	\cvsect{Who am I?}
+	
+	I am a passionate programmer with some complex projects already behind me. I don't stray from new things and i get job done. I am a senior of the University of Lodz in the field of computer science. I am looking for a job that will allow me to develop my skills and gain new experiences. I am open to new technologies and I am not afraid of challenges
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+	\cvsect{Skills}
+	\begin{barchart}{3}
+		\baritem{Angular}{100}
+		\baritem{Typescript/Javascript}{100}
+		\baritem{Nest.js}{90}
+		\baritem{AWS/GCP}{80}
+		\baritem{Docker/Kubernetes}{80}
+		\baritem{Python}{70}
+		\baritem{React-native}{70}
+		\baritem{Golang}{70}
+		\baritem{C-sharp}{60}
+		\baritem{React}{55}
+		\baritem{Java}{40}
+	\end{barchart}
+\end{minipage}
+\vspace{1.0cm}
+
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+  \cvsect{Currently using}
+
+	Typescript, Angular, Golang, Nest.js, AWS/GCP, Docker/Kubernetes,
+	Websockets, Pub-Sub model, Github Actions, NgRx, Redux, Signals, Axios, 
+	PostgreSQL, MySQL, Microfrontends with Angular, WebComponents
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+  \cvsect{Used in the past}
+
+	D3, Oracle ECharts, C-Sharp, Golang, React-native, React, Tauri, Ionic (with Capacitor), Java (8 and 12), Python
+\end{minipage}
+\vspace{1.0cm}
+
+% \begin{center}
+% 	    \bubbles{5/Office, 2/Linux}
+% \end{center}
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{10.2024 - Now}
+		{Senior Fullstack Developer}
+		{Digibate}
+		{Working on a launch of the startup AI marketing tool for small and medium businesses. Developing the application in collaboration with UI/UX designers, marketing strategists and intern developers. Application uses Angular, OpenAI api, Nest.js, websockets and pub-sub model and much more}
+	\entry
+		{06.2022 - 11.2024}
+		{Mid Frontend Developer}
+		{WPP plc.}
+		{Worked within multiple Angular projects - created standalone and microfrontend applications in different standards and versions of Angular (maintained versions from 7 to 18, created from 12 to 18) for market analysis for clients such as BMW, CocaCola, Amazon and L'Oreal}
+	\entry
+		{03.2022 - 11.2024}
+		{Junior Frontend Developer / Mid Fullstack Developer}
+		{Digimonkeys.com sp. z o.o.}
+		{Worked on a "Dr. HairCare" project - a startup that used algorythmic approach to hair care for men a women. Aso worked on some smaller projects, for instance a RaspberryPi based automatic answering machine with a mobile app for ease of use}
+	\entry
+		{08.2021 - 03.2022}
+		{Intern Backend Developer}
+		{mBank S.A.}
+		{Worked as a Java backend developer with some python being used for additional data analysis. My job was to improve and maintain the bank form a credit system}  	
+	\entry
+		{06.2017 - 04.2021}
+		{Senior Service Agent}
+		{Fujitsu Technology Solutions}
+		{Worked as a Service Desk Agent for UK based and Nordic users (1st line support). Worked with ServiceNow, Oracle, DBMS, ActiveDirectory and other, internal, tools.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2022 - 2025}
+		{Computer Science [Master's]}
+		{University of Łódź}
+		{I study general computer science at the Faculty of Mathematics and Computer Science of the University of Lodz. I'm in the process of writing my Master's degree thesis.}
+	\entry
+		{2019 - 2022}
+		{Computer Science [Bachelor's]}
+		{University of Łódź}
+		{I graduated with a bachelor's degree in computer science majoring in Networks and Data Processing. My backelor's thesis was about the usecases of websockets in audio and video streaming.}
+\end{entrylist}
+
+
+\cvsect{Soft skills}
+	\begin{itemize}
+		\item If need comes, I can be a good leader, but my main goal is to create amazing, responsive and bug-free software
+		\item I am a good learner and a good decision maker
+		\item I can work in a group, but I can also work alone
+		\item I am a good listener and I can communicate well with others
+		\item I am a good problem solver
+		\item I am a good planner and I can work under pressure
+	\end{itemize}
+\vspace{0.5cm}
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+  \textbf{Polish} - Native \\ 
+	\textbf{English} - C1 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I like maths, programming (obviously), video games, board games, RPG's (yes, those weird games where people meet and roleplay medival knights or trolls), cars and good food and drink. I am a movie nut - I tend to watch everything I haven't yet seen. My favourite movies are "Scareface", "Martian", "Vanilla Sky" and "Mullholand Drive".
+\end{minipage}
+\vspace{1.5cm}
+
+%----------------------------------------------------------------------------------------
+\noindent\rule{8cm}{0.4pt}
+
+I consent to the processing of my personal data for the purposes of the recruitment process in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such and the repeal of Directive 95/46/EC (GDPR).
+\end{document}
