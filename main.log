@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  24 FEB 2025 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  9 MAY 2025 12:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -749,6 +749,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 
+Underfull \hbox (badness 1057) in paragraph at lines 110--111
+\T1/Raleway-TLF/m/n/9 C-Sharp, Golang, React-native, Re-act, Tauri, Ionic
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
@@ -759,7 +764,7 @@ LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 127.
 [1
 
-{/nix/store/j75s62ny5s8g8mxp6yd1n2839wgn27s9-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/raleway/a_bzmckq.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
+{/nix/store/ja14af5rh6w6ydvilsidwh58lifsnwd2-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/raleway/a_bzmckq.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -803,13 +808,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  24123 strings out of 474116
  486003 string characters out of 5717523
- 1959187 words of memory out of 5000000
+ 1960187 words of memory out of 5000000
  46066 multiletter control sequences out of 15000+600000
  669665 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,439b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,459b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/fontawesome/FontAwesome.pfb></nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Regular.pfb>
-Output written on main.pdf (2 pages, 70266 bytes).
+Output written on main.pdf (2 pages, 70405 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
