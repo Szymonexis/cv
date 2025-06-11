@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  9 MAY 2025 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  11 JUN 2025 14:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -739,8 +739,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
  []
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 101--104
-[]\T1/Raleway-TLF/m/n/9 Typescript, An-gu-lar, Golang, Nest.js, AWS/GCP,
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
+[]\T1/Raleway-TLF/m/n/9 Typescript, Golang, Python, An-gu-lar, Nest.js,
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 101--104
+\T1/Raleway-TLF/m/n/9 Ax-ios, Post-greSQL, We-b-Com-po-nents, AWS, Jest,
  []
 
 
@@ -764,7 +769,7 @@ LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 127.
 [1
 
-{/nix/store/ja14af5rh6w6ydvilsidwh58lifsnwd2-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/raleway/a_bzmckq.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
+{/nix/store/ja14af5rh6w6ydvilsidwh58lifsnwd2-texlive-combined-full-2023-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/raleway/a_bzmckq.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -795,7 +800,7 @@ Overfull \hbox (1.52998pt too wide) in paragraph at lines 185--202
 [][]  []
  []
 
-[2
+[3
 
 {/nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/enc/dvips/raleway/a_2bcjq6.enc}] (./main.aux)
  ***********
@@ -806,18 +811,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24123 strings out of 474116
- 486003 string characters out of 5717523
+ 24124 strings out of 474116
+ 486009 string characters out of 5717523
  1960187 words of memory out of 5000000
  46066 multiletter control sequences out of 15000+600000
  669665 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,459b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,467b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/public/fontawesome/FontAwesome.pfb></nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></nix/store/mmfbr0bck8cxdcvdrn8bx9hk92midwh3-texlive-combined-full-2023-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Regular.pfb>
-Output written on main.pdf (2 pages, 70405 bytes).
+Output written on main.pdf (3 pages, 70551 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 54 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
