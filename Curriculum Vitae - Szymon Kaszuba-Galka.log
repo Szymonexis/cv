@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  6 AUG 2025 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  6 AUG 2025 18:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**/home/molly/repos/cv/main
-(/home/molly/repos/cv/main.tex
+**"/home/molly/repos/cv/Curriculum Vitae - Szymon Kaszuba-Galka"
+(/home/molly/repos/cv/Curriculum Vitae - Szymon Kaszuba-Galka.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (./developercv.cls
@@ -606,8 +606,8 @@ LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box90
-) (./main.aux)
-\openout1 = `main.aux'.
+) (./Curriculum Vitae - Szymon Kaszuba-Galka.aux)
+\openout1 = `"Curriculum Vitae - Szymon Kaszuba-Galka.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -634,9 +634,9 @@ File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 28.
 Package hyperref Info: Link coloring OFF on input line 28.
- (./main.out) (./main.out)
+ (./Curriculum Vitae - Szymon Kaszuba-Galka.out) (./Curriculum Vitae - Szymon Kaszuba-Galka.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `"Curriculum Vitae - Szymon Kaszuba-Galka.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -802,24 +802,24 @@ Overfull \hbox (1.52998pt too wide) in paragraph at lines 184--201
 
 
 
-[2{/nix/store/p1yahfldxg4ayc58dflvrrssbmpikhg0-texlive-combined-full-2024-final-texmfdist/fonts/enc/dvips/raleway/a_2bcjq6.enc}] (./main.aux)
+[2{/nix/store/p1yahfldxg4ayc58dflvrrssbmpikhg0-texlive-combined-full-2024-final-texmfdist/fonts/enc/dvips/raleway/a_2bcjq6.enc}] (./Curriculum Vitae - Szymon Kaszuba-Galka.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `"Curriculum Vitae - Szymon Kaszuba-Galka".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24252 strings out of 473201
- 488144 string characters out of 5689025
- 882526 words of memory out of 5000000
- 47086 multiletter control sequences out of 15000+600000
+ 24254 strings out of 473201
+ 488925 string characters out of 5689025
+ 882740 words of memory out of 5000000
+ 47088 multiletter control sequences out of 15000+600000
  670433 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,483b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,520b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/p1yahfldxg4ayc58dflvrrssbmpikhg0-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/fontawesome/FontAwesome.pfb></nix/store/p1yahfldxg4ayc58dflvrrssbmpikhg0-texlive-combined-full-2024-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></nix/store/p1yahfldxg4ayc58dflvrrssbmpikhg0-texlive-combined-full-2024-final-texmfdist/fonts/type1/impallari/raleway/Raleway-Regular.pfb>
-Output written on main.pdf (2 pages, 70404 bytes).
+Output written on "Curriculum Vitae - Szymon Kaszuba-Galka.pdf" (2 pages, 70404 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
