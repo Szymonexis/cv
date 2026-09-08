@@ -8,7 +8,7 @@
 %
 % Authors:
 % Jan Vorisek (jan@vorisek.me)
-% Based on a template by Jan Küster (info@jankuester.com)
+% Based on a template by Jan Küster (info@jankuster.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
 %
 % License:
@@ -22,203 +22,191 @@
 
 \documentclass[9pt]{developercv}% Default font size, values from 8-12pt are recommended
 
-
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+	%----------------------------------------------------------------------------------------
+	%	TITLE AND CONTACT INFORMATION
+	%----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	TITLE AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+	\begin{minipage}[t]{0.55\textwidth} % 45% of the page width for name
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
 
-\begin{minipage}[t]{0.55\textwidth} % 45% of the page width for name
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		% If your name is very short, use just one of the lines below
+		% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Szymon}}}}} % First name
 
-	% If your name is very short, use just one of the lines below
-	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Szymon}}}}} % First name
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kaszuba-Gałka}}}}} % Last name
 
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kaszuba-Gałka}}}}} % Last name
+		\vspace{5pt}
 
+		{\huge} % Career or current job title
+	\end{minipage}
+	\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
 
-	\vspace{5pt}
+		% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+		% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+		\icon{MapMarker}{12}{Łódź, Polska}\\
+		\icon{Phone}{12}{+48 794 03 03 63}\\
+		\icon{At}{12}{\href{mailto:szymonkaszubagalka.innovio@gmail.com}{szymonkaszubagalka.innovio@gmail.com}}\\
+		\icon{Github}{12}{\href{https://github.com/Szymonexis}{Szymonexis}}\\
+		\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/szymon-kaszuba-gałka/}{Szymon Kaszuba-Gałka}}\\
+	\end{minipage}
 
+	\vspace{0.3cm}
 
-	{\huge} % Career or current job title
+	%----------------------------------------------------------------------------------------
+	%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+	%----------------------------------------------------------------------------------------
 
-\end{minipage}
-\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+		\vspace{-\baselineskip}
+		\cvsect{Professional Summary}
 
+		Senior Fullstack Developer with \number\numexpr\year-2021+1\relax+ years of
+		experience building scalable web applications and AI-driven solutions. Proven
+		expertise in TypeScript, Python, and cloud technologies with a track record of
+		delivering enterprise-grade solutions for global brands. Specialized in
+		fullstack development, microservices architecture, and test automation.
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.45\textwidth}
+		\vspace{-\baselineskip}
+		\cvsect{Skills}
 
-	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Łódź, Polska}\\
-	\icon{Phone}{12}{+48 794 03 03 63}\\
-	\icon{At}{12}{\href{mailto:szymonkaszubagalka.innovio@gmail.com}{szymonkaszubagalka.innovio@gmail.com}}\\
-	\icon{Github}{12}{\href{https://github.com/Szymonexis}{Szymonexis}}\\
-	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/szymon-kaszuba-gałka/}{Szymon Kaszuba-Gałka}}\\
-\end{minipage}
+		\begin{barchart}
+			{3}
+			\baritem{Typescript/Javascript}{100}
+			\baritem{FE/BE solutions (TypeScript)}{100}
 
+			\baritem{Mobile solutions (TypeScript)}{90}
+			\baritem{Docker/Kubernetes}{85}
 
-\vspace{0.3cm}
+			\baritem{Python}{80}
+			\baritem{AWS/GCP}{80}
+			\baritem{FE/BE solutions (Non-TypeScript)}{70}
 
-%----------------------------------------------------------------------------------------
-%	INTRODUCTION, SKILLS AND TECHNOLOGIES
-%----------------------------------------------------------------------------------------
+			\baritem{Golang}{70}
+			\baritem{Mobile solutions (Non-TypeScript)}{60}
+		\end{barchart}
+	\end{minipage}
 
+	% \vspace{-\baselineskip}
+	\vspace{1.0cm}
 
-% \begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
-% 	\vspace{-\baselineskip}
-% 	\cvsect{Professional Summary}
+	\begin{minipage}[t]{0.45\textwidth}
+		\vspace{-\baselineskip}
+		\cvsect{Currently using}
 
-% 	Senior Fullstack Developer with \the\numexpr\year-2021\relax+ years of experience building scalable web applications and AI-driven solutions. Proven expertise in TypeScript, Python, and cloud technologies with a track record of delivering enterprise-grade solutions for global brands. Specialized in fullstack development, microservices architecture, and test automation.
-% \end{minipage}
-% \hfill
-% \begin{minipage}[t]{0.45\textwidth}
-% 	\vspace{-\baselineskip}
-% 	\cvsect{Skills}
-% 	\begin{barchart}{3}
-% 		\baritem{Typescript/Javascript}{100}
-% 		\baritem{Python}{80}
-% 		\baritem{Golang}{70}
-% 		\baritem{Java}{70}
-% 		\baritem{C-sharp}{60}
-% 		\baritem{Docker/Kubernetes}{85}
-% 		\baritem{AWS/GCP}{80}
-% 		\baritem{Angular}{100}
-% 		\baritem{Nest.js}{90}
-% 		\baritem{React}{75}
-% 		\baritem{React-native}{70}
-% 	\end{barchart}
-% \end{minipage}
+		Typescript, Golang, Python, Angular, AWS/GCP, Docker/Kubernetes, Websockets,
+		Pub-Sub model, Github Actions, NgRx, Redux, Signals, Axios, PostgreSQL, WebComponents,
+		AWS, Jest, Supertest, Java (21)
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.45\textwidth}
+		\vspace{-\baselineskip}
+		\cvsect{Used in the past}
 
-% \vspace{-\baselineskip}
-\cvsect{Professional Summary}
+		Cypress and Jester (E2E testing), D3, Oracle ECharts, C-Sharp, Golang, React-native,
+		React, Tauri, Ionic (with Capacitor), Java (8 and 12), Python, Nest.js
+	\end{minipage}
+	\vspace{1.0cm}
 
-Senior Fullstack Developer with \the\numexpr\year-2021\relax+ years of experience building scalable web applications and AI-driven solutions.
-Proven expertise in TypeScript, Python, and cloud technologies with a track record of delivering enterprise-grade solutions for global brands.
-Specialized in fullstack development, microservices architecture, and test automation.
+	% \begin{center}
+	% 	    \bubbles{5/Office, 2/Linux}
+	% \end{center}
+	%----------------------------------------------------------------------------------------
+	%	EXPERIENCE
+	%----------------------------------------------------------------------------------------
+	\cvsect{Experience}
 
-\vspace{1.0cm}
+	\begin{entrylist}
+		\entry {03.2026 - Now} {Senior Frontend Developer} {Detable sp. z o.o.} {Working on the Polish Ministry of Finance's internal CRM 2.0 platform, leveraging Angular v21 to deliver a high-performance, enterprise-grade solution for national financial administration.}
 
-\begin{minipage}[t]{0.45\textwidth}
-	\vspace{-\baselineskip}
-	\cvsect{Currently using}
+		\entry {10.2025 - Now} {University Lecturer} {Vizja University Warsaw} {Instructor for "Paradigms and Programming Languages" \& "Team project" courses, teaching Java, Python, and JavaScript fundamentals. Delivering weekend and evening lectures and practical exercise sessions for multiple student groups, emphasizing core programming concepts and language-specific best practices.}
 
-	Typescript, Golang, Python, Angular, AWS/GCP, Docker/Kubernetes,
-	Websockets, Pub-Sub model, Github Actions, NgRx, Redux, Signals, Axios,
-	PostgreSQL, WebComponents, AWS, Jest, Supertest, Java (21)
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.45\textwidth}
-	\vspace{-\baselineskip}
-	\cvsect{Used in the past}
+		\entry {02.2026 - 03.2026} {Senior Software Engineer} {Capgemini} {Accelerated the launch of a global enterprise business modeling platform by developing core Python, FastAPI, and ML features within a condensed project timeline.}
 
-	Cypress and Jester (E2E testing), D3, Oracle ECharts, C-Sharp, Golang, React-native, React, Tauri, Ionic (with Capacitor), Java (8 and 12), Python, Nest.js
-\end{minipage}
-\vspace{1.0cm}
+		\entry {10.2024 - 01.2026} {Senior Fullstack Developer} {Digibate ApS} {Leading development of an AI-powered marketing platform for SMBs using Angular, OpenAI API, Nest.js, and event-driven architecture. Spearheaded comprehensive backend and frontend refactoring to improve stability and performance. Key achievements: migrated database from MySQL to PostgreSQL, implemented custom OAuth 2.1 authentication, developed Model Context Protocol (MCP) server, and established comprehensive E2E testing infrastructure using Cypress, Jest, and Supertest.}
 
-% \begin{center}
-% 	    \bubbles{5/Office, 2/Linux}
-% \end{center}
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-\cvsect{Experience}
+		\entry {06.2022 - 11.2024} {Mid Frontend Developer} {WPP plc.} {Developed and maintained Angular applications (versions 7-18) for market analysis platforms serving enterprise clients including BMW, Coca-Cola, Amazon, and L'Oréal. Built standalone and microfrontend architectures. Led E2E testing initiatives including training programs and complete test pipeline implementation using Cypress for two major projects.}
 
-\begin{entrylist}
-	\entry
-	{03.2026 - Now}
-	{Senior Frontend Developer}
-	{Detable sp. z o.o.}
-	{Working on the Polish Ministry of Finance's internal CRM 2.0 platform, leveraging Angular v21 to deliver a high-performance, enterprise-grade solution for national financial administration.}
-	\entry
-	{10.2025 - Now}
-	{University Lecturer}
-	{Vizja University Warsaw}
-	{Instructor for "Paradigms and Programming Languages" \& "Team project" courses, teaching Java, Python, and JavaScript fundamentals. Delivering weekend and evening lectures and practical exercise sessions for multiple student groups, emphasizing core programming concepts and language-specific best practices.}
-	\entry
-	{02.2026 - 03.2026}
-	{Senior Software Engineer}
-	{Capgemini}
-	{Accelerated the launch of a global enterprise business modeling platform by developing core Python, FastAPI, and ML features within a condensed project timeline.}
-	\entry
-	{10.2024 - 01.2026}
-	{Senior Fullstack Developer}
-	{Digibate ApS}
-	{Leading development of an AI-powered marketing platform for SMBs using Angular, OpenAI API, Nest.js, and event-driven architecture. Spearheaded comprehensive backend and frontend refactoring to improve stability and performance. Key achievements: migrated database from MySQL to PostgreSQL, implemented custom OAuth 2.1 authentication, developed Model Context Protocol (MCP) server, and established comprehensive E2E testing infrastructure using Cypress, Jest, and Supertest.}
-	\entry
-	{06.2022 - 11.2024}
-	{Mid Frontend Developer}
-	{WPP plc.}
-	{Developed and maintained Angular applications (versions 7-18) for market analysis platforms serving enterprise clients including BMW, Coca-Cola, Amazon, and L'Oréal. Built standalone and microfrontend architectures. Led E2E testing initiatives including training programs and complete test pipeline implementation using Cypress for two major projects.}
-	\entry
-	{03.2022 - 11.2024}
-	{Junior Frontend Developer / Mid Fullstack Developer}
-	{Digimonkeys.com sp. z o.o.}
-	{Developed "Dr. HairCare" - an algorithmic hair care platform for personalized treatment recommendations. Built cross-platform solutions including a Raspberry Pi-based automated response system with integrated mobile application for streamlined user management.}
-	\entry
-	{08.2021 - 03.2022}
-	{Intern Backend Developer}
-	{mBank S.A.}
-	{Developed and maintained Java-based credit system infrastructure for one of Poland's largest banks. Utilized Python for data analysis and system optimization. Enhanced system reliability and performance through code improvements and bug fixes.}
-	\entry
-	{06.2017 - 04.2021}
-	{Senior Service Agent}
-	{Fujitsu Technology Solutions}
-	{Provided first-line IT support for UK and Nordic enterprise users. Managed tickets through ServiceNow, administered Oracle databases and Active Directory, and delivered technical solutions using internal support tools.}
-\end{entrylist}
+		\entry {03.2022 - 11.2024} {Junior Frontend Developer / Mid Fullstack Developer}
+		{Digimonkeys.com sp. z o.o.} {Developed "Dr. HairCare" - an algorithmic hair care platform for personalized treatment recommendations. Built cross-platform solutions including a Raspberry Pi-based automated response system with integrated mobile application for streamlined user management.}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+		\entry {08.2021 - 03.2022} {Intern Backend Developer} {mBank S.A.} {Developed and maintained Java-based credit system infrastructure for one of Poland's largest banks. Utilized Python for data analysis and system optimization. Enhanced system reliability and performance through code improvements and bug fixes.}
 
-\cvsect{Education}
+		\entry {06.2017 - 04.2021} {Senior Service Agent} {Fujitsu Technology Solutions}
+		{Provided first-line IT support for UK and Nordic enterprise users. Managed tickets through ServiceNow, administered Oracle databases and Active Directory, and delivered technical solutions using internal support tools.}
+	\end{entrylist}
 
-\begin{entrylist}
-	\entry
-	{2019 - 2022}
-	{Computer Science [Bachelor's]}
-	{University of Łódź}
-	{Bachelor's degree in Computer Science, specializing in Networks and Data Processing. Thesis: "WebSocket Applications in Audio and Video Streaming."}
-\end{entrylist}
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION
+	%----------------------------------------------------------------------------------------
 
+	\cvsect{Education}
 
-\cvsect{Soft skills}
-\begin{itemize}
-	\item Strong leadership capabilities with a primary focus on delivering high-quality, responsive, and maintainable software solutions
-	\item Quick learner with excellent decision-making abilities and analytical thinking
-	\item Effective team collaborator with proven ability to work independently when required
-	\item Excellent communicator and active listener, facilitating productive cross-functional collaboration
-	\item Analytical problem solver with systematic approach to complex technical challenges
-	\item Strong planning and organizational skills with ability to deliver under pressure
-\end{itemize}
-\vspace{0.5cm}
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
-%----------------------------------------------------------------------------------------
+	\begin{entrylist}
+		\entry {2019 - 2022} {Computer Science [Bachelor's]} {University of Łódź} {Bachelor's degree in Computer Science, specializing in Networks and Data Processing. Thesis: "WebSocket Applications in Audio and Video Streaming."}
+	\end{entrylist}
 
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Soft skills}
 
-	\cvsect{Languages}
+	\begin{itemize}
+		\item Strong leadership capabilities with a primary focus on delivering high-quality,
+			responsive, and maintainable software solutions
 
-	\textbf{Polish} - Native \\
-	\textbf{English} - C1
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.7\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		\item Quick learner with excellent decision-making abilities and analytical thinking
 
-	\cvsect{Hobbies}
+		\item Effective team collaborator with proven ability to work independently when
+			required
 
-	Software development enthusiast with interests in mathematics, gaming (video games, board games, and tabletop RPGs), automotive technology, and cinema. Avid film enthusiast with particular appreciation for classics including "Scarface," "The Martian," "Vanilla Sky," and "Mulholland Drive."
-\end{minipage}
-\vspace{1.5cm}
+		\item Excellent communicator and active listener, facilitating productive
+			cross-functional collaboration
 
-%----------------------------------------------------------------------------------------
-\noindent\rule{8cm}{0.4pt}
+		\item Analytical problem solver with systematic approach to complex technical
+			challenges
 
-I consent to the processing of my personal data for the purposes of the recruitment process in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such and the repeal of Directive 95/46/EC (GDPR).
+		\item Strong planning and organizational skills with ability to deliver under
+			pressure
+	\end{itemize}
+
+	\vspace{0.5cm}
+
+	%----------------------------------------------------------------------------------------
+	%	ADDITIONAL INFORMATION
+	%----------------------------------------------------------------------------------------
+
+	\begin{minipage}[t]{0.3\textwidth}
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+		\cvsect{Languages}
+
+		\textbf{Polish} - Native \\ \textbf{English} - C1
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.7\textwidth}
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+		\cvsect{Hobbies}
+
+		Software development enthusiast with interests in mathematics, gaming (video
+		games, board games, and tabletop RPGs), automotive technology, and cinema. Avid
+		film enthusiast with particular appreciation for classics including "Scarface,"
+		"The Martian," "Vanilla Sky," and "Mulholland Drive."
+	\end{minipage}
+
+	\vspace{1.5cm}
+
+	%----------------------------------------------------------------------------------------
+	\noindent
+	\rule{8cm}{0.4pt}
+
+	I consent to the processing of my personal data for the purposes of the recruitment
+	process in accordance with Regulation (EU) 2016/679 of the European Parliament
+	and of the Council of 27 April 2016 on the protection of individuals with regard
+	to the processing of personal data and on the free movement of such and the repeal
+	of Directive 95/46/EC (GDPR).
+
 \end{document}
